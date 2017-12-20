@@ -1,0 +1,1451 @@
+@import'./lego-colors.scss';
+
+/*
+ * Taken from http://www.peeron.com/cgi-bin/invcgis/colorguide.cgi
+ *
+ * White
+ * Grey
+ * Light-green
+ * Light-reddish-violet
+ * Light-orange-brown
+ * Nougat
+ * Bright-red
+ * Med-reddish-violet
+ * Bright-blue
+ * Bright-yellow
+ * Earth-orange
+ * Black
+ * Dark-grey
+ * Dark-green
+ * Medium-green
+ * Bright-green
+ * Dark-orange
+ * Light-bluish-violet
+ * Light-blue
+ * Medium-red
+ * Medium-blue
+ * Light-grey
+ * Bright-violet
+ * Br-yellowish-orange
+ * Bright-orange
+ * Bright-bluish-green
+ * Earth-yellow
+ * Bright-bluish-violet
+ * Medium-bluish-violet
+ * Med-yellowish-green
+ * Med-bluish-green
+ * Light-bluish-green
+ * Br-yellowish-green
+ * Lig-yellowish-green
+ * Med-yellowish-orange
+ * Br-reddish-orange
+ * Bright-reddish-violet
+ * Light-orange
+ * Gold
+ * Dark-nougat
+ * Silver
+ * Medium-orange
+ * Earth-blue
+ * Earth-green
+ * Dark-grey-metallic
+ * Black-metallic
+ * Light-grey-metallic
+ * Dark-red
+ * Gun-metallic
+ * Fire-Yellow
+ * Flame-yellowish-orange
+ * Reddish-brown
+ * Flame-reddish-orange
+ * Medium-stone-grey
+ * Royal-blue
+ * Dark-Royal-blue
+ * Bright-reddish-lilac
+ * Dark-stone-grey
+ * Light-stone-grey
+ * Faded-green
+ * Turquoise
+ * Light-Royal-blue
+ * Medium-Royal-blue
+ * Rust
+ * Brown
+ * Reddish-lilac
+ * Lilac
+ * Light-lilac
+ * Bright-purple
+ * Light-purple
+ * Light-pink
+ * Light-brick-yellow
+ * Warm-yellowish-orange
+ * Cool-yellow
+ * Dove-blue
+ * Medium-lilac
+ */
+
+.White {
+	.side--1 {
+		background: darken($White, 8%);
+	}
+	.side--2, .stud {
+		background: $White;
+	}
+	.side--3 {
+		background: lighten($White, 8%);
+	}
+	.stud:before {
+		background: lighten($White, 16%);
+	}
+	.stud--inner:after {
+		color: $White;
+		text-shadow: 0.4px 0.4px 0px lighten($White, 4%);
+	}
+}
+.Grey {
+	.side--1 {
+		background: darken($Grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Grey;
+	}
+	.side--3 {
+		background: lighten($Grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Grey, 4%);
+	}
+}
+.Light-green {
+	.side--1 {
+		background: darken($Light-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-green;
+	}
+	.side--3 {
+		background: lighten($Light-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-green, 4%);
+	}
+}
+.Light-reddish-violet {
+	.side--1 {
+		background: darken($Light-reddish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-reddish-violet;
+	}
+	.side--3 {
+		background: lighten($Light-reddish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-reddish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-reddish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-reddish-violet, 4%);
+	}
+}
+.Light-orange-brown {
+	.side--1 {
+		background: darken($Light-orange-brown, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-orange-brown;
+	}
+	.side--3 {
+		background: lighten($Light-orange-brown, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-orange-brown, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-orange-brown;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-orange-brown, 4%);
+	}
+}
+.Nougat {
+	.side--1 {
+		background: darken($Nougat, 8%);
+	}
+	.side--2, .stud {
+		background: $Nougat;
+	}
+	.side--3 {
+		background: lighten($Nougat, 8%);
+	}
+	.stud:before {
+		background: lighten($Nougat, 16%);
+	}
+	.stud--inner:after {
+		color: $Nougat;
+		text-shadow: 0.4px 0.4px 0px lighten($Nougat, 4%);
+	}
+}
+.Bright-red {
+	.side--1 {
+		background: darken($Bright-red, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-red;
+	}
+	.side--3 {
+		background: lighten($Bright-red, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-red, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-red;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-red, 4%);
+	}
+}
+.Med-reddish-violet {
+	.side--1 {
+		background: darken($Med-reddish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Med-reddish-violet;
+	}
+	.side--3 {
+		background: lighten($Med-reddish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Med-reddish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Med-reddish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Med-reddish-violet, 4%);
+	}
+}
+.Bright-blue {
+	.side--1 {
+		background: darken($Bright-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-blue;
+	}
+	.side--3 {
+		background: lighten($Bright-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-blue, 4%);
+	}
+}
+.Bright-yellow {
+	.side--1 {
+		background: darken($Bright-yellow, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-yellow;
+	}
+	.side--3 {
+		background: lighten($Bright-yellow, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-yellow, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-yellow;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-yellow, 4%);
+	}
+}
+.Earth-orange {
+	.side--1 {
+		background: darken($Earth-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Earth-orange;
+	}
+	.side--3 {
+		background: lighten($Earth-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Earth-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Earth-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Earth-orange, 4%);
+	}
+}
+.Black {
+	.side--1 {
+		background: darken($Black, 8%);
+	}
+	.side--2, .stud {
+		background: $Black;
+	}
+	.side--3 {
+		background: lighten($Black, 8%);
+	}
+	.stud:before {
+		background: lighten($Black, 16%);
+	}
+	.stud--inner:after {
+		color: $Black;
+		text-shadow: 0.4px 0.4px 0px lighten($Black, 4%);
+	}
+}
+.Dark-grey {
+	.side--1 {
+		background: darken($Dark-grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-grey;
+	}
+	.side--3 {
+		background: lighten($Dark-grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-grey, 4%);
+	}
+}
+.Dark-green {
+	.side--1 {
+		background: darken($Dark-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-green;
+	}
+	.side--3 {
+		background: lighten($Dark-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-green, 4%);
+	}
+}
+.Medium-green {
+	.side--1 {
+		background: darken($Medium-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-green;
+	}
+	.side--3 {
+		background: lighten($Medium-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-green, 4%);
+	}
+}
+.Bright-green {
+	.side--1 {
+		background: darken($Bright-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-green;
+	}
+	.side--3 {
+		background: lighten($Bright-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-green, 4%);
+	}
+}
+.Dark-orange {
+	.side--1 {
+		background: darken($Dark-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-orange;
+	}
+	.side--3 {
+		background: lighten($Dark-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-orange, 4%);
+	}
+}
+.Light-bluish-violet {
+	.side--1 {
+		background: darken($Light-bluish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-bluish-violet;
+	}
+	.side--3 {
+		background: lighten($Light-bluish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-bluish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-bluish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-bluish-violet, 4%);
+	}
+}
+.Light-blue {
+	.side--1 {
+		background: darken($Light-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-blue;
+	}
+	.side--3 {
+		background: lighten($Light-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-blue, 4%);
+	}
+}
+.Medium-red {
+	.side--1 {
+		background: darken($Medium-red, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-red;
+	}
+	.side--3 {
+		background: lighten($Medium-red, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-red, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-red;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-red, 4%);
+	}
+}
+.Medium-blue {
+	.side--1 {
+		background: darken($Medium-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-blue;
+	}
+	.side--3 {
+		background: lighten($Medium-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-blue, 4%);
+	}
+}
+.Light-grey {
+	.side--1 {
+		background: darken($Light-grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-grey;
+	}
+	.side--3 {
+		background: lighten($Light-grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-grey, 4%);
+	}
+}
+.Bright-violet {
+	.side--1 {
+		background: darken($Bright-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-violet;
+	}
+	.side--3 {
+		background: lighten($Bright-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-violet, 4%);
+	}
+}
+.Br-yellowish-orange {
+	.side--1 {
+		background: darken($Br-yellowish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Br-yellowish-orange;
+	}
+	.side--3 {
+		background: lighten($Br-yellowish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Br-yellowish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Br-yellowish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Br-yellowish-orange, 4%);
+	}
+}
+.Bright-orange {
+	.side--1 {
+		background: darken($Bright-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-orange;
+	}
+	.side--3 {
+		background: lighten($Bright-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-orange, 4%);
+	}
+}
+.Bright-bluish-green {
+	.side--1 {
+		background: darken($Bright-bluish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-bluish-green;
+	}
+	.side--3 {
+		background: lighten($Bright-bluish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-bluish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-bluish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-bluish-green, 4%);
+	}
+}
+.Earth-yellow {
+	.side--1 {
+		background: darken($Earth-yellow, 8%);
+	}
+	.side--2, .stud {
+		background: $Earth-yellow;
+	}
+	.side--3 {
+		background: lighten($Earth-yellow, 8%);
+	}
+	.stud:before {
+		background: lighten($Earth-yellow, 16%);
+	}
+	.stud--inner:after {
+		color: $Earth-yellow;
+		text-shadow: 0.4px 0.4px 0px lighten($Earth-yellow, 4%);
+	}
+}
+.Bright-bluish-violet {
+	.side--1 {
+		background: darken($Bright-bluish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-bluish-violet;
+	}
+	.side--3 {
+		background: lighten($Bright-bluish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-bluish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-bluish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-bluish-violet, 4%);
+	}
+}
+.Medium-bluish-violet {
+	.side--1 {
+		background: darken($Medium-bluish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-bluish-violet;
+	}
+	.side--3 {
+		background: lighten($Medium-bluish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-bluish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-bluish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-bluish-violet, 4%);
+	}
+}
+.Med-yellowish-green {
+	.side--1 {
+		background: darken($Med-yellowish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Med-yellowish-green;
+	}
+	.side--3 {
+		background: lighten($Med-yellowish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Med-yellowish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Med-yellowish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Med-yellowish-green, 4%);
+	}
+}
+.Med-bluish-green {
+	.side--1 {
+		background: darken($Med-bluish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Med-bluish-green;
+	}
+	.side--3 {
+		background: lighten($Med-bluish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Med-bluish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Med-bluish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Med-bluish-green, 4%);
+	}
+}
+.Light-bluish-green {
+	.side--1 {
+		background: darken($Light-bluish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-bluish-green;
+	}
+	.side--3 {
+		background: lighten($Light-bluish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-bluish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-bluish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-bluish-green, 4%);
+	}
+}
+.Br-yellowish-green {
+	.side--1 {
+		background: darken($Br-yellowish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Br-yellowish-green;
+	}
+	.side--3 {
+		background: lighten($Br-yellowish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Br-yellowish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Br-yellowish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Br-yellowish-green, 4%);
+	}
+}
+.Lig-yellowish-green {
+	.side--1 {
+		background: darken($Lig-yellowish-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Lig-yellowish-green;
+	}
+	.side--3 {
+		background: lighten($Lig-yellowish-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Lig-yellowish-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Lig-yellowish-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Lig-yellowish-green, 4%);
+	}
+}
+.Med-yellowish-orange {
+	.side--1 {
+		background: darken($Med-yellowish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Med-yellowish-orange;
+	}
+	.side--3 {
+		background: lighten($Med-yellowish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Med-yellowish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Med-yellowish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Med-yellowish-orange, 4%);
+	}
+}
+.Br-reddish-orange {
+	.side--1 {
+		background: darken($Br-reddish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Br-reddish-orange;
+	}
+	.side--3 {
+		background: lighten($Br-reddish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Br-reddish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Br-reddish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Br-reddish-orange, 4%);
+	}
+}
+.Bright-reddish-violet {
+	.side--1 {
+		background: darken($Bright-reddish-violet, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-reddish-violet;
+	}
+	.side--3 {
+		background: lighten($Bright-reddish-violet, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-reddish-violet, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-reddish-violet;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-reddish-violet, 4%);
+	}
+}
+.Light-orange {
+	.side--1 {
+		background: darken($Light-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-orange;
+	}
+	.side--3 {
+		background: lighten($Light-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-orange, 4%);
+	}
+}
+.Gold {
+	.side--1 {
+		background: darken($Gold, 8%);
+	}
+	.side--2, .stud {
+		background: $Gold;
+	}
+	.side--3 {
+		background: lighten($Gold, 8%);
+	}
+	.stud:before {
+		background: lighten($Gold, 16%);
+	}
+	.stud--inner:after {
+		color: $Gold;
+		text-shadow: 0.4px 0.4px 0px lighten($Gold, 4%);
+	}
+}
+.Dark-nougat {
+	.side--1 {
+		background: darken($Dark-nougat, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-nougat;
+	}
+	.side--3 {
+		background: lighten($Dark-nougat, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-nougat, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-nougat;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-nougat, 4%);
+	}
+}
+.Silver {
+	.side--1 {
+		background: darken($Silver, 8%);
+	}
+	.side--2, .stud {
+		background: $Silver;
+	}
+	.side--3 {
+		background: lighten($Silver, 8%);
+	}
+	.stud:before {
+		background: lighten($Silver, 16%);
+	}
+	.stud--inner:after {
+		color: $Silver;
+		text-shadow: 0.4px 0.4px 0px lighten($Silver, 4%);
+	}
+}
+.Medium-orange {
+	.side--1 {
+		background: darken($Medium-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-orange;
+	}
+	.side--3 {
+		background: lighten($Medium-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-orange, 4%);
+	}
+}
+.Earth-blue {
+	.side--1 {
+		background: darken($Earth-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Earth-blue;
+	}
+	.side--3 {
+		background: lighten($Earth-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Earth-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Earth-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Earth-blue, 4%);
+	}
+}
+.Earth-green {
+	.side--1 {
+		background: darken($Earth-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Earth-green;
+	}
+	.side--3 {
+		background: lighten($Earth-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Earth-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Earth-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Earth-green, 4%);
+	}
+}
+.Dark-grey-metallic {
+	.side--1 {
+		background: darken($Dark-grey-metallic, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-grey-metallic;
+	}
+	.side--3 {
+		background: lighten($Dark-grey-metallic, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-grey-metallic, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-grey-metallic;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-grey-metallic, 4%);
+	}
+}
+.Black-metallic {
+	.side--1 {
+		background: darken($Black-metallic, 8%);
+	}
+	.side--2, .stud {
+		background: $Black-metallic;
+	}
+	.side--3 {
+		background: lighten($Black-metallic, 8%);
+	}
+	.stud:before {
+		background: lighten($Black-metallic, 16%);
+	}
+	.stud--inner:after {
+		color: $Black-metallic;
+		text-shadow: 0.4px 0.4px 0px lighten($Black-metallic, 4%);
+	}
+}
+.Light-grey-metallic {
+	.side--1 {
+		background: darken($Light-grey-metallic, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-grey-metallic;
+	}
+	.side--3 {
+		background: lighten($Light-grey-metallic, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-grey-metallic, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-grey-metallic;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-grey-metallic, 4%);
+	}
+}
+.Dark-red {
+	.side--1 {
+		background: darken($Dark-red, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-red;
+	}
+	.side--3 {
+		background: lighten($Dark-red, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-red, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-red;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-red, 4%);
+	}
+}
+.Gun-metallic {
+	.side--1 {
+		background: darken($Gun-metallic, 8%);
+	}
+	.side--2, .stud {
+		background: $Gun-metallic;
+	}
+	.side--3 {
+		background: lighten($Gun-metallic, 8%);
+	}
+	.stud:before {
+		background: lighten($Gun-metallic, 16%);
+	}
+	.stud--inner:after {
+		color: $Gun-metallic;
+		text-shadow: 0.4px 0.4px 0px lighten($Gun-metallic, 4%);
+	}
+}
+.Fire-Yellow {
+	.side--1 {
+		background: darken($Fire-Yellow, 8%);
+	}
+	.side--2, .stud {
+		background: $Fire-Yellow;
+	}
+	.side--3 {
+		background: lighten($Fire-Yellow, 8%);
+	}
+	.stud:before {
+		background: lighten($Fire-Yellow, 16%);
+	}
+	.stud--inner:after {
+		color: $Fire-Yellow;
+		text-shadow: 0.4px 0.4px 0px lighten($Fire-Yellow, 4%);
+	}
+}
+.Flame-yellowish-orange {
+	.side--1 {
+		background: darken($Flame-yellowish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Flame-yellowish-orange;
+	}
+	.side--3 {
+		background: lighten($Flame-yellowish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Flame-yellowish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Flame-yellowish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Flame-yellowish-orange, 4%);
+	}
+}
+.Reddish-brown {
+	.side--1 {
+		background: darken($Reddish-brown, 8%);
+	}
+	.side--2, .stud {
+		background: $Reddish-brown;
+	}
+	.side--3 {
+		background: lighten($Reddish-brown, 8%);
+	}
+	.stud:before {
+		background: lighten($Reddish-brown, 16%);
+	}
+	.stud--inner:after {
+		color: $Reddish-brown;
+		text-shadow: 0.4px 0.4px 0px lighten($Reddish-brown, 4%);
+	}
+}
+.Flame-reddish-orange {
+	.side--1 {
+		background: darken($Flame-reddish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Flame-reddish-orange;
+	}
+	.side--3 {
+		background: lighten($Flame-reddish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Flame-reddish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Flame-reddish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Flame-reddish-orange, 4%);
+	}
+}
+.Medium-stone-grey {
+	.side--1 {
+		background: darken($Medium-stone-grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-stone-grey;
+	}
+	.side--3 {
+		background: lighten($Medium-stone-grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-stone-grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-stone-grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-stone-grey, 4%);
+	}
+}
+.Royal-blue {
+	.side--1 {
+		background: darken($Royal-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Royal-blue;
+	}
+	.side--3 {
+		background: lighten($Royal-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Royal-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Royal-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Royal-blue, 4%);
+	}
+}
+.Dark-Royal-blue {
+	.side--1 {
+		background: darken($Dark-Royal-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-Royal-blue;
+	}
+	.side--3 {
+		background: lighten($Dark-Royal-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-Royal-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-Royal-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-Royal-blue, 4%);
+	}
+}
+.Bright-reddish-lilac {
+	.side--1 {
+		background: darken($Bright-reddish-lilac, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-reddish-lilac;
+	}
+	.side--3 {
+		background: lighten($Bright-reddish-lilac, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-reddish-lilac, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-reddish-lilac;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-reddish-lilac, 4%);
+	}
+}
+.Dark-stone-grey {
+	.side--1 {
+		background: darken($Dark-stone-grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Dark-stone-grey;
+	}
+	.side--3 {
+		background: lighten($Dark-stone-grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Dark-stone-grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Dark-stone-grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Dark-stone-grey, 4%);
+	}
+}
+.Light-stone-grey {
+	.side--1 {
+		background: darken($Light-stone-grey, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-stone-grey;
+	}
+	.side--3 {
+		background: lighten($Light-stone-grey, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-stone-grey, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-stone-grey;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-stone-grey, 4%);
+	}
+}
+.Faded-green {
+	.side--1 {
+		background: darken($Faded-green, 8%);
+	}
+	.side--2, .stud {
+		background: $Faded-green;
+	}
+	.side--3 {
+		background: lighten($Faded-green, 8%);
+	}
+	.stud:before {
+		background: lighten($Faded-green, 16%);
+	}
+	.stud--inner:after {
+		color: $Faded-green;
+		text-shadow: 0.4px 0.4px 0px lighten($Faded-green, 4%);
+	}
+}
+.Turquoise {
+	.side--1 {
+		background: darken($Turquoise, 8%);
+	}
+	.side--2, .stud {
+		background: $Turquoise;
+	}
+	.side--3 {
+		background: lighten($Turquoise, 8%);
+	}
+	.stud:before {
+		background: lighten($Turquoise, 16%);
+	}
+	.stud--inner:after {
+		color: $Turquoise;
+		text-shadow: 0.4px 0.4px 0px lighten($Turquoise, 4%);
+	}
+}
+.Light-Royal-blue {
+	.side--1 {
+		background: darken($Light-Royal-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-Royal-blue;
+	}
+	.side--3 {
+		background: lighten($Light-Royal-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-Royal-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-Royal-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-Royal-blue, 4%);
+	}
+}
+.Medium-Royal-blue {
+	.side--1 {
+		background: darken($Medium-Royal-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-Royal-blue;
+	}
+	.side--3 {
+		background: lighten($Medium-Royal-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-Royal-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-Royal-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-Royal-blue, 4%);
+	}
+}
+.Rust {
+	.side--1 {
+		background: darken($Rust, 8%);
+	}
+	.side--2, .stud {
+		background: $Rust;
+	}
+	.side--3 {
+		background: lighten($Rust, 8%);
+	}
+	.stud:before {
+		background: lighten($Rust, 16%);
+	}
+	.stud--inner:after {
+		color: $Rust;
+		text-shadow: 0.4px 0.4px 0px lighten($Rust, 4%);
+	}
+}
+.Brown {
+	.side--1 {
+		background: darken($Brown, 8%);
+	}
+	.side--2, .stud {
+		background: $Brown;
+	}
+	.side--3 {
+		background: lighten($Brown, 8%);
+	}
+	.stud:before {
+		background: lighten($Brown, 16%);
+	}
+	.stud--inner:after {
+		color: $Brown;
+		text-shadow: 0.4px 0.4px 0px lighten($Brown, 4%);
+	}
+}
+.Reddish-lilac {
+	.side--1 {
+		background: darken($Reddish-lilac, 8%);
+	}
+	.side--2, .stud {
+		background: $Reddish-lilac;
+	}
+	.side--3 {
+		background: lighten($Reddish-lilac, 8%);
+	}
+	.stud:before {
+		background: lighten($Reddish-lilac, 16%);
+	}
+	.stud--inner:after {
+		color: $Reddish-lilac;
+		text-shadow: 0.4px 0.4px 0px lighten($Reddish-lilac, 4%);
+	}
+}
+.Lilac {
+	.side--1 {
+		background: darken($Lilac, 8%);
+	}
+	.side--2, .stud {
+		background: $Lilac;
+	}
+	.side--3 {
+		background: lighten($Lilac, 8%);
+	}
+	.stud:before {
+		background: lighten($Lilac, 16%);
+	}
+	.stud--inner:after {
+		color: $Lilac;
+		text-shadow: 0.4px 0.4px 0px lighten($Lilac, 4%);
+	}
+}
+.Light-lilac {
+	.side--1 {
+		background: darken($Light-lilac, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-lilac;
+	}
+	.side--3 {
+		background: lighten($Light-lilac, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-lilac, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-lilac;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-lilac, 4%);
+	}
+}
+.Bright-purple {
+	.side--1 {
+		background: darken($Bright-purple, 8%);
+	}
+	.side--2, .stud {
+		background: $Bright-purple;
+	}
+	.side--3 {
+		background: lighten($Bright-purple, 8%);
+	}
+	.stud:before {
+		background: lighten($Bright-purple, 16%);
+	}
+	.stud--inner:after {
+		color: $Bright-purple;
+		text-shadow: 0.4px 0.4px 0px lighten($Bright-purple, 4%);
+	}
+}
+.Light-purple {
+	.side--1 {
+		background: darken($Light-purple, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-purple;
+	}
+	.side--3 {
+		background: lighten($Light-purple, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-purple, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-purple;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-purple, 4%);
+	}
+}
+.Light-pink {
+	.side--1 {
+		background: darken($Light-pink, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-pink;
+	}
+	.side--3 {
+		background: lighten($Light-pink, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-pink, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-pink;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-pink, 4%);
+	}
+}
+.Light-brick-yellow {
+	.side--1 {
+		background: darken($Light-brick-yellow, 8%);
+	}
+	.side--2, .stud {
+		background: $Light-brick-yellow;
+	}
+	.side--3 {
+		background: lighten($Light-brick-yellow, 8%);
+	}
+	.stud:before {
+		background: lighten($Light-brick-yellow, 16%);
+	}
+	.stud--inner:after {
+		color: $Light-brick-yellow;
+		text-shadow: 0.4px 0.4px 0px lighten($Light-brick-yellow, 4%);
+	}
+}
+.Warm-yellowish-orange {
+	.side--1 {
+		background: darken($Warm-yellowish-orange, 8%);
+	}
+	.side--2, .stud {
+		background: $Warm-yellowish-orange;
+	}
+	.side--3 {
+		background: lighten($Warm-yellowish-orange, 8%);
+	}
+	.stud:before {
+		background: lighten($Warm-yellowish-orange, 16%);
+	}
+	.stud--inner:after {
+		color: $Warm-yellowish-orange;
+		text-shadow: 0.4px 0.4px 0px lighten($Warm-yellowish-orange, 4%);
+	}
+}
+.Cool-yellow {
+	.side--1 {
+		background: darken($Cool-yellow, 8%);
+	}
+	.side--2, .stud {
+		background: $Cool-yellow;
+	}
+	.side--3 {
+		background: lighten($Cool-yellow, 8%);
+	}
+	.stud:before {
+		background: lighten($Cool-yellow, 16%);
+	}
+	.stud--inner:after {
+		color: $Cool-yellow;
+		text-shadow: 0.4px 0.4px 0px lighten($Cool-yellow, 4%);
+	}
+}
+.Dove-blue {
+	.side--1 {
+		background: darken($Dove-blue, 8%);
+	}
+	.side--2, .stud {
+		background: $Dove-blue;
+	}
+	.side--3 {
+		background: lighten($Dove-blue, 8%);
+	}
+	.stud:before {
+		background: lighten($Dove-blue, 16%);
+	}
+	.stud--inner:after {
+		color: $Dove-blue;
+		text-shadow: 0.4px 0.4px 0px lighten($Dove-blue, 4%);
+	}
+}
+.Medium-lilac {
+	.side--1 {
+		background: darken($Medium-lilac, 8%);
+	}
+	.side--2, .stud {
+		background: $Medium-lilac;
+	}
+	.side--3 {
+		background: lighten($Medium-lilac, 8%);
+	}
+	.stud:before {
+		background: lighten($Medium-lilac, 16%);
+	}
+	.stud--inner:after {
+		color: $Medium-lilac;
+		text-shadow: 0.4px 0.4px 0px lighten($Medium-lilac, 4%);
+	}
+}

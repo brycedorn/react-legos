@@ -1,0 +1,61 @@
+{
+  "name": "react-legos",
+  "version": "0.0.1",
+  "main": "dist/lego.js",
+  "description": "A React component to render LEGO bricks",
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib/lego.js > dist/lego.js",
+    "dev": "webpack --config ./client/webpack.config.js && webpack-dev-server --config ./client/webpack.config.js --inline --hot --content-base ./public && yarn run storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "keywords": [
+    "react",
+    "lego",
+    "react-lego",
+    "react-legos",
+    "brick",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brycedorn/react-legos"
+  },
+  "author": {
+    "name": "Bryce Dorn",
+    "email": "brycedorn@gmail.com",
+    "url": "http://www.bryce.io"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://www.mit-license.org"
+  },
+  "devDependencies": {
+    "@storybook/addon-centered": "^3.2.17",
+    "@storybook/addon-knobs": "^3.2.17",
+    "@storybook/addon-notes": "^3.2.17",
+    "@storybook/addon-options": "^3.2.17",
+    "@storybook/react": "^3.2.17",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^5.8.35",
+    "babel-loader": "^5.4.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^1.1.0",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^4.7.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-ga": "^2.2.0",
+    "react-tools": "^0.12.0",
+    "run-sequence": "^1.0.2",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.8.3",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

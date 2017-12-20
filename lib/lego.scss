@@ -1,0 +1,237 @@
+@import './fonts.scss';
+@import'./lego-color-classes.scss';
+
+// Brick & sides
+.brick {
+  display: flex;
+  position: relative;
+
+  .side, .unit {
+    position: absolute;
+
+    &--1 {
+      transform: skewY(-30deg);
+    }
+    &--2 {
+      transform: skewY(30deg);
+    }
+    &--3 {
+      transform: skewY(30deg);
+      &-wrap {
+        transform: rotate(-60deg);
+      }
+    }
+  }
+}
+
+// Studs
+.stud {
+  position: absolute;
+  border-radius: 18px / 10px;
+  box-shadow: inset -4px 6px 6px rgba(0,0,0,0.2);
+  height: 30px;
+  left: 28px;
+  top: 4px;
+  width: 36px;
+  z-index: 10;
+  &:before {
+    content: "";
+    position: absolute;
+    box-shadow: inset 0px 0px 0px 0.8px rgba(255,255,255,0.2);
+    height: 20px;
+    width: 36px;
+    border-radius: 18px / 10px;
+    z-index: 10;
+  }
+  &--inner {
+    position: absolute;
+    transform: rotate(60deg);
+    z-index: 100;
+
+    &:after {
+      content: "LEGO";
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      font-size: 9px;
+      left: 8px;
+      position: absolute;
+      top: -15px;
+      transform: skewY(-30deg);
+    }
+  }
+}
+
+// Brick sizes
+.brick {
+  &--tiny {
+    .unit {
+      height: 30px;
+      width: 22px;
+    }
+    .side--1 {
+      top: 11px;
+      right: 0px;
+      height: 17px;
+      width: 11px;
+    }
+    .side--2 {
+      top: 11px;
+      left: 0px;
+      height: 17px;
+      width: 11px;
+    }
+    .side--3 {
+      top: -2px;
+      left: -2px;
+      height: 13px;
+      width: 12px;
+    }
+    .stud {
+      box-shadow: inset -1px 1px 1px rgba(0,0,0,0.2);
+      height: 7.5px;
+      left: 7px;
+      top: 1px;
+      width: 9px;
+
+      &:before {
+        height: 5px;
+        width: 9px;
+      }
+      &--inner:after {
+        display: none;
+      }
+    }
+  }
+  &--small {
+    .unit {
+      height: 60px;
+      width: 44px;
+    }
+    .side--1 {
+      top: 19px;
+      right: 0px;
+      height: 34px;
+      width: 22px;
+    }
+    .side--2 {
+      top: 19px;
+      left: 0px;
+      height: 34px;
+      width: 22px;
+    }
+    .side--3 {
+      top: -6px;
+      left: 0px;
+      height: 26px;
+      width: 23px;
+    }
+    .stud {
+      border-radius: 9px / 5px;
+      box-shadow: inset -2px 3px 3px rgba(0,0,0,0.2);
+      height: 15px;
+      left: 14px;
+      top: 2px;
+      width: 18px;
+
+      &:before {
+        height: 10px;
+        width: 18px;
+        border-radius: 9px / 5px;
+      }
+      &--inner:after {
+        font-weight: 400;
+        font-size: 4px;
+        left: 4px;
+        top: -8px;
+      }
+    }
+  }
+  &--medium {
+    .unit {
+      height: 106.5px;
+      width: 80px;
+    }
+    .side--1 {
+      top: 34px;
+      right: 0px;
+      height: 61px;
+      width: 40px;
+    }
+    .side--2 {
+      top: 34px;
+      left: 0px;
+      height: 61px;
+      width: 40px;
+    }
+    .side--3 {
+      top: -12px;
+      left: 0px;
+      height: 46px;
+      width: 40px;
+    }
+    .stud {
+      border-radius: 18px / 10px;
+      box-shadow: inset -4px 6px 6px rgba(0,0,0,0.2);
+      height: 26.5px;
+      left: 24px;
+      top: 3px;
+      width: 32px;
+
+      &:before {
+        height: 18px;
+        width: 32px;
+        border-radius: 18px / 10px;
+      }
+      &--inner:after {
+        font-weight: 400;
+        font-size: 9px;
+        left: 6px;
+        top: -14px;
+      }
+    }
+  }
+  &--large {
+    .unit {
+      height: 120px;
+      width: 90px;
+    }
+    .side--1 {
+      top: 39px;
+      right: 0px;
+      height: 68px;
+      width: 45px;
+    }
+    .side--2 {
+      top: 39px;
+      left: 0px;
+      height: 68px;
+      width: 45px;
+    }
+    .side--3 {
+      top: -13px;
+      left: 0px;
+      height: 52px;
+      width: 45px;
+    }
+    .stud {
+      border-radius: 18px / 10px;
+      box-shadow: inset -4px 6px 6px rgba(0,0,0,0.2);
+      height: 30px;
+      left: 28px;
+      top: 4px;
+      width: 36px;
+
+      &:before {
+        height: 20px;
+        width: 36px;
+        border-radius: 18px / 10px;
+      }
+      &--inner:after {
+        font-weight: 400;
+        font-size: 9px;
+        left: 8px;
+        top: -15px;
+      }
+    }
+  }
+}
