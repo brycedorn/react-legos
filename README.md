@@ -4,7 +4,7 @@
 
 <img width="1041" alt="screen shot 2017-12-19 at 11 57 11 pm" src="https://user-images.githubusercontent.com/3171252/34193282-82468e80-e518-11e7-8b0c-c30ff0d6112e.png">
 
-[Storybook](http://bryce.io/react-intense).
+[Storybook](http://bryce.io/react-legos).
 
 ## Make a LEGO brick!
 

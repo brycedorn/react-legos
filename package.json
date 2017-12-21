@@ -5,6 +5,7 @@
   "description": "A React component to render LEGO bricks",
   "scripts": {
     "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib/lego.js > dist/lego.js",
     "dev": "webpack --config ./client/webpack.config.js && webpack-dev-server --config ./client/webpack.config.js --inline --hot --content-base ./public && yarn run storybook",
     "storybook": "start-storybook -p 6006"
@@ -36,6 +37,7 @@
     "@storybook/addon-notes": "^3.2.17",
     "@storybook/addon-options": "^3.2.17",
     "@storybook/react": "^3.2.17",
+    "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^5.8.35",
     "babel-loader": "^5.4.0",
