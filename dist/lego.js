@@ -198,4 +198,3 @@ exports.default = Lego;
 
 Lego.defaultProps = defaultProps;
 Lego.propTypes = propTypes;
-

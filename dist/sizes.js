@@ -1,4 +1,9 @@
-const sizeOffsets = {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sizeOffsets = {
   tiny: {
     xOffset: 11,
     yOffset: 6.5
@@ -15,6 +20,6 @@ const sizeOffsets = {
     xOffset: 45,
     yOffset: 26
   }
-}
+};
 
-export default sizeOffsets
+exports.default = sizeOffsets;

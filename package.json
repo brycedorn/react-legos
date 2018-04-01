@@ -1,13 +1,13 @@
 {
   "name": "react-legos",
-  "version": "0.0.1",
-  "main": "dist/lego.js",
+  "version": "0.0.2",
+  "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib/lego.js > dist/lego.js",
-    "dev": "webpack --config ./client/webpack.config.js && webpack-dev-server --config ./client/webpack.config.js --inline --hot --content-base ./public && yarn run storybook",
+    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib --out-dir dist",
+    "dev": "yarn run storybook",
     "storybook": "start-storybook -p 6006"
   },
   "keywords": [
