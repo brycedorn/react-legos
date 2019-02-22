@@ -28,8 +28,8 @@ Prop | Default | Description
 
 ## Issues
 
- If you find any issues with this component, please [report](https://github.com/brycedorn/react-legos/issues) them!
- 
+ If you find any issues with this component, please [report](https://gitlab.com/brycedorn/react-legos/issues) them!
+
 ## Note
 
 LEGO and the LEGO logo are trademarks and/or copyrights of the LEGO Group. This is not at all affiliated with The LEGO Group, and was simply a project of mine using the LEGO name as a proprietary eponym.
