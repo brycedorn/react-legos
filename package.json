@@ -1,12 +1,10 @@
 {
   "name": "react-legos",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib --out-dir dist",
+    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib",
     "dev": "yarn run storybook",
     "storybook": "start-storybook -p 6006"
   },
@@ -20,44 +18,31 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/brycedorn/react-legos"
+    "url": "https://gitlab.com/brycedorn/react-legos"
   },
   "author": {
     "name": "Bryce Dorn",
     "email": "brycedorn@gmail.com",
-    "url": "http://www.bryce.io"
+    "url": "https://www.bryce.io"
   },
   "license": {
     "type": "MIT",
     "url": "http://www.mit-license.org"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@storybook/addon-centered": "^3.2.17",
     "@storybook/addon-knobs": "^3.2.17",
     "@storybook/addon-notes": "^3.2.17",
     "@storybook/addon-options": "^3.2.17",
     "@storybook/react": "^3.2.17",
-    "@storybook/storybook-deployer": "^2.2.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^5.8.35",
-    "babel-loader": "^5.4.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "css-loader": "^0.25.0",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^1.1.0",
-    "jsx-loader": "^0.13.2",
-    "node-sass": "^4.7.2",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-ga": "^2.2.0",
-    "react-tools": "^0.12.0",
-    "run-sequence": "^1.0.2",
-    "sass-loader": "^4.1.1",
-    "style-loader": "^0.8.3",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "url-loader": "^0.5.5",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
