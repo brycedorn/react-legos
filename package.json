@@ -5,8 +5,8 @@
   "description": "A React component to render LEGO bricks",
   "scripts": {
     "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib",
-    "dev": "yarn run storybook",
-    "storybook": "start-storybook -p 6006"
+    "start": "start-storybook -p 8001",
+    "build": "build-storybook -o public"
   },
   "keywords": [
     "react",
