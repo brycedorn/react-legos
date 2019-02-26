@@ -1,10 +1,10 @@
 {
   "name": "react-legos",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
-    "build-lib": "cp -R lib/. dist/ && ./node_modules/.bin/babel --plugins transform-react-jsx --presets 'env' lib",
+    "build-lib": "npx babel --presets minify lib --out-dir dist",
     "start": "start-storybook -p 8001",
     "build": "build-storybook -o public"
   },
@@ -20,6 +20,7 @@
     "type": "git",
     "url": "https://gitlab.com/brycedorn/react-legos"
   },
+  "homepage": "https://react-legos.bryce.io",
   "author": {
     "name": "Bryce Dorn",
     "email": "brycedorn@gmail.com",
@@ -33,11 +34,14 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-centered": "^3.2.17",
     "@storybook/addon-knobs": "^3.2.17",
     "@storybook/addon-notes": "^3.2.17",
     "@storybook/addon-options": "^3.2.17",
     "@storybook/react": "^3.2.17",
+    "babel-preset-minify": "^0.5.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   },
