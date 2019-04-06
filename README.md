@@ -1,10 +1,8 @@
 # react-legos
 
-[![npm version](https://badge.fury.io/js/react-legos.svg)](https://badge.fury.io/js/react-legos) [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/brycedorn/react-legos/master/LICENSE)
-
 <img width="1041" alt="screen shot 2017-12-19 at 11 57 11 pm" src="https://user-images.githubusercontent.com/3171252/34193282-82468e80-e518-11e7-8b0c-c30ff0d6112e.png">
 
-[Storybook](http://bryce.io/react-legos).
+Try it out in [Storybook](https://react-legos.bryce.io).
 
 ## Make a LEGO brick!
 
@@ -28,7 +26,7 @@ Prop | Default | Description
 
 ## Issues
 
- If you find any issues with this component, please [report](https://gitlab.com/brycedorn/react-legos/issues) them!
+If you find any issues with this component, please [report](https://gitlab.com/brycedorn/react-legos/issues) them!
 
 ## Note
 
