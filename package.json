@@ -4,6 +4,8 @@
   "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
+    "compile": "yarn build-styles && yarn build-lib",
+    "build-styles": "npx sass lib/lego.scss dist/lego.css -s compressed",
     "build-lib": "npx babel --presets minify lib --out-dir dist",
     "start": "start-storybook -p 8001",
     "build": "build-storybook -o public"
