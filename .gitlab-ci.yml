@@ -7,8 +7,8 @@ cache:
 pages:
   stage: deploy
   script:
-  - yarn install
-  - yarn build
+  - npm i
+  - npm run build
   artifacts:
     paths:
     - public

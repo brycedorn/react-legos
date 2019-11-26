@@ -26,11 +26,11 @@ storiesOf('Basic bricks', module)
 		<Brick
 			color={includedColors[2]}
 			shape={bricks[select('Shape', {
-				'twoByTwo': 'Two by Two',
-				'twoByFour': 'Two by Four',
-				'one': 'Single Unit',
-				'oneByTwo': 'One by Two',
-				'oneByFour': 'One by Four'
+				'Two by Two': 'twoByTwo',
+				'Two by Four': 'twoByFour',
+				'Single Unit': 'one',
+				'One by Two': 'oneByTwo',
+				'One by Four': 'oneByFour'
 			}, 'twoByFour')]}
 		/>
 	)
@@ -51,11 +51,11 @@ storiesOf('Basic bricks', module)
   	<Brick
       color={select('Color', includedColors, includedColors[3])}
       shape={bricks[select('Shape', {
-				'twoByTwo': 'Two by Two',
-				'twoByFour': 'Two by Four',
-				'one': 'Single Unit',
-				'oneByTwo': 'One by Two',
-				'oneByFour': 'One by Four'
+				'Two by Two': 'twoByTwo',
+				'Two by Four': 'twoByFour',
+				'Single Unit': 'one',
+				'One by Two': 'oneByTwo',
+				'One by Four': 'oneByFour'
 			}, 'twoByFour')]}
       size={select('Size', includedSizes, includedSizes[2])}
   	/>

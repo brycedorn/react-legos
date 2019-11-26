@@ -8,6 +8,6 @@ export {
 	text,
 	withKnobs
 } from '@storybook/addon-knobs'
-export { setOptions } from '@storybook/addon-options'
+export { withOptions } from '@storybook/addon-options'
 export { withNotes } from '@storybook/addon-notes'
-export { default as withCentered } from '@storybook/addon-centered'
+export { default as withCentered } from '@storybook/addon-centered/react'

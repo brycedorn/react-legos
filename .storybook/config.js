@@ -1,11 +1,11 @@
-import { configure, setOptions } from './'
+import { configure, withOptions } from './'
 
 function loadStories() {
   require('../stories')
 }
 
 // Option defaults:
-setOptions({
+withOptions({
   /**
    * name to display in the top left corner
    * @type {String}
@@ -16,11 +16,6 @@ setOptions({
    * @type {String}
    */
   url: '#',
-  /**
-   * show story component as full screen
-   * @type {Boolean}
-   */
-  goFullScreen: false,
   /**
    * display left panel that shows a list of stories
    * @type {Boolean}

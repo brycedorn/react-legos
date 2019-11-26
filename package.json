@@ -1,10 +1,10 @@
 {
   "name": "react-legos",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
-    "compile": "yarn build-styles && yarn build-lib",
+    "compile": "npm run build-styles && npm run build-lib",
     "build-styles": "npx sass lib/lego.scss dist/lego.css -s compressed",
     "build-lib": "npx babel --presets minify lib --out-dir dist",
     "start": "start-storybook -p 8001",
@@ -28,24 +28,22 @@
     "email": "brycedorn@gmail.com",
     "url": "https://www.bryce.io"
   },
-  "license": {
-    "type": "MIT",
-    "url": "http://www.mit-license.org"
-  },
+  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-centered": "^4.1.13",
-    "@storybook/addon-knobs": "^4.1.13",
-    "@storybook/addon-notes": "^4.1.13",
-    "@storybook/addon-options": "^4.1.13",
-    "@storybook/react": "^4.1.13",
-    "babel-preset-minify": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@storybook/addon-centered": "^5.2.6",
+    "@storybook/addon-knobs": "^5.2.6",
+    "@storybook/addon-notes": "^5.2.6",
+    "@storybook/addon-options": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "babel-loader": "^8.0.6",
+    "babel-preset-minify": "^0.5.1",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
   },
   "dependencies": {
     "react": "^16.8.3",
