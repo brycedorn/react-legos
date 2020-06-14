@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "npm run build-styles && npm run build-lib",
     "build-styles": "npx sass lib/lego.scss dist/lego.css -s compressed",
-    "build-lib": "npx babel --presets minify lib --out-dir dist",
+    "build-lib": "rimraf dist && npx babel --presets minify lib --out-dir dist",
     "start": "start-storybook -p 8001",
     "build": "build-storybook -o public",
     "lint": "eslint .",
@@ -48,6 +48,7 @@
     "eslint-plugin-emotion": "^10.0.27",
     "eslint-plugin-react": "^7.20.0",
     "node-sass": "^4.13.0",
+    "rimraf": "^3.0.2",
     "sass-loader": "^8.0.0"
   },
   "dependencies": {
