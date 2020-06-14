@@ -1,17 +1,19 @@
 # react-legos
 
+[![npm version](https://badge.fury.io/js/react-legos.svg)](https://badge.fury.io/js/react-legos)
+
 <img width="1041" alt="screen shot 2017-12-19 at 11 57 11 pm" src="https://user-images.githubusercontent.com/3171252/34193282-82468e80-e518-11e7-8b0c-c30ff0d6112e.png">
 
 Try it out in [Storybook](https://react-legos.bryce.io).
 
 ## Make a LEGO brick!
 
-```javascript
+```jsx
 import Brick, { shapes } from 'react-legos'
 
 ...
 
-<Brick shape=shapes['twoByFour'] />
+<Brick shape={shapes['twoByFour']} />
 ```
 
 ## Props
@@ -19,10 +21,12 @@ import Brick, { shapes } from 'react-legos'
 Prop | Default | Description
 ---- | ------- | -----------
 `shape` || The shape of the brick. A grid of true/false values to determine if the index is a space or filled.
-`size` | `medium` | The size of the brick: small, medium, large or xLarge.
+`size` | `medium` | The size of the brick: small, medium, or large.
 `style` || Optional style param, useful for z-indexing and placing bricks on top of one another.
-`placement` || Style params to set on the brick, specific to the location of the brick on the page.
-`color` | random | The color of the brick, chosen from `lib/colors.js`. If not specified, will render a random color from said list. Colors taken from [this list](http://www.peeron.com/cgi-bin/invcgis/colorguide.cgi).
+`color` | `#eee` | The color of the brick, Can use colors in `lib/colors.js`, which correspond to [this list](http://www.peeron.com/cgi-bin/invcgis/colorguide.cgi).
+`opacity` | 1 | For making the brick transparent.
+`fetchFont` | `true` | Disable to prevent fetching Roboto via Google fonts.
+`optimize` | `true` | Disable to render all sides of bricks, including invisible ones.
 
 ## Issues
 

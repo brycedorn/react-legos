@@ -1,6 +1,6 @@
 {
   "name": "react-legos",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "description": "A React component to render LEGO bricks",
   "scripts": {
@@ -8,7 +8,9 @@
     "build-styles": "npx sass lib/lego.scss dist/lego.css -s compressed",
     "build-lib": "npx babel --presets minify lib --out-dir dist",
     "start": "start-storybook -p 8001",
-    "build": "build-storybook -o public"
+    "build": "build-storybook -o public",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [
     "react",
@@ -42,10 +44,16 @@
     "@storybook/react": "^5.2.6",
     "babel-loader": "^8.0.6",
     "babel-preset-minify": "^0.5.1",
+    "eslint": "^7.2.0",
+    "eslint-plugin-emotion": "^10.0.27",
+    "eslint-plugin-react": "^7.20.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "polished": "^3.6.4",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   }
