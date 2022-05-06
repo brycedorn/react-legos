@@ -11,6 +11,7 @@ import {
     text
 } from '../.storybook';
 
+import { FontImport } from '../lib/elements';
 import Brick from '../lib/lego';
 import { bricks, letters } from '../lib/shapes';
 import sizes from '../lib/sizes';
@@ -20,9 +21,17 @@ const colorOptions = Object.keys(colors);
 const letterOptions = Object.keys(letters);
 const sizeOptions = Object.keys(sizes);
 
+const withFont = (Story) => (
+    <>
+        <FontImport />
+        <Story />
+    </>
+);
+
 storiesOf('Basic bricks', module)
     .addDecorator(withCentered)
     .addDecorator(withKnobs)
+    .addDecorator(withFont)
     .add('With shape control', () =>
         <Brick
             color={colors[colorOptions[2]]}
@@ -65,10 +74,11 @@ storiesOf('Basic bricks', module)
 storiesOf('Transparent bricks', module)
     .addDecorator(withCentered)
     .addDecorator(withKnobs)
+    .addDecorator(withFont)
     .add('With transparency control', () => (
         <Brick
             color={colors[colorOptions[4]]}
-            opacity={number('Opacity', 0.5, {
+            opacity={number('Opacity', 0.3, {
                 range: true,
                 min: 0,
                 max: 1,
@@ -81,6 +91,7 @@ storiesOf('Transparent bricks', module)
 storiesOf('Letters', module)
     .addDecorator(withCentered)
     .addDecorator(withKnobs)
+    .addDecorator(withFont)
     .add('Included letters', () => (
         <Brick
             shape={letters[select('Letter', letterOptions, letterOptions[0])]}
@@ -91,6 +102,7 @@ storiesOf('Letters', module)
 storiesOf('Custom bricks', module)
     .addDecorator(withCentered)
     .addDecorator(withKnobs)
+    .addDecorator(withFont)
     .add('With shape control', () => {
         const options = {
             range: true,

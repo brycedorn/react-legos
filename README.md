@@ -25,7 +25,6 @@ Prop | Default | Description
 `style` || Optional style param, useful for z-indexing and placing bricks on top of one another.
 `color` | `#eee` | The color of the brick, Can use colors in `lib/colors.js`, which correspond to [this list](http://www.peeron.com/cgi-bin/invcgis/colorguide.cgi).
 `opacity` | 1 | For making the brick transparent.
-`fetchFont` | `true` | Disable to prevent fetching Roboto via Google fonts.
 `optimize` | `true` | Disable to render all sides of bricks, including invisible ones.
 
 ## Issues
